@@ -149,7 +149,6 @@
         display: grid;
         grid-template-columns: repeat(2, minmax(250px, 1fr));
         gap: 20px;                
-        background-color: #fff;
         justify-items: center;
         margin-top: 0px ;
         margin-bottom: 100px;
