@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paul & Michelle</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img class="logo-image" src="images/P&M1.png" alt="Logo">
+
+            <h2>29 Novembre 2025  |  06 Décembre 2025<h2>
+        </div>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" onclick="showPage('home')">ACCUEIL</a></li>
+            <li><a href="#story" onclick="showPage('story')">NOTRE HISTOIRE</a></li>
+            <li><a href="#details" onclick="showPage('details')">DÉTAILS</a></li>
+            <li><a href="#rsvp" onclick="showPage('rsvp')">RSVP</a></li>
+        </ul>
+    </nav>
+
+    <!-- HOME PAGE -->
+    <div id="home" class="page">
+        <section class="hero">
+            <div class="hero-title-container">
+                <h1 id="heroTitle">Paul & Michelle</h1>
+            </div>
+            <div class="hero-image-container">
+                <img class="hero-image" src="images/hero.png" alt="Paul & Michelle">
+                 <div class="hero-overlay">
+                    <p class="hero-text">
+                        Qui peut trouver une femme vertueuse? Elle a bien plus de valeur que les perles.
+                        Le coeur de son mari a confiance en elle, Et les produits ne lui feront pas défaut.
+                        Elle lui fait du bien, et non du mal, Tous les jours de sa vie
+                    </p>
+                    <p class="bible-verse">Proverbes 31:10-12</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="grid-section">
+            <div class="grid-item" onclick="showPage('story')">
+                <img src="images/histoire.png" alt="Notre Histoire">
+                <div class="grid-overlay">
+                    <h3 class="grid-title">Notre Histoire</h3>
+                </div>
+            </div>
+            <div class="grid-item" onclick="showPage('details')">
+                <img src="images/details.png" alt="Les Détails">
+                <div class="grid-overlay">
+                    <h3 class="grid-title">Les Détails</h3>
+                </div>
+            </div>
+            <div class="grid-item" onclick="showPage('rsvp')">
+                <img src="images/RSVP.png" alt="RSVP">
+                <div class="grid-overlay">
+                    <h3 class="grid-title">RSVP</h3>
+                </div>
+            </div>
+            <div class="grid-item">
+                <img src="images/register.png" alt="Enregistrez-vous">
+                <div class="grid-overlay">
+                    <h3 class="grid-title">Enregistrez-vous</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="rsvp-section">
+            <h2>RAPPEL</h2>
+            <p class="rsvp-text">
+                Nous avions hâte de vous inviter à notre célébration. 
+                Merci de confirmer votre présence afin que nous puissions 
+                organiser cette journée inoubliable avec vous. Votre présence 
+                sera notre plus beau cadeau.
+            </p>
+            <button class="rsvp-btn" onclick="showPage('rsvp')">RÉPONDEZ ICI</button>
+        </section>
+
+        <footer>
+            <h3>P&M</h3>
+            <p>29 Novembre 2025 | 06 Décembre 2025</p>
+        </footer>
+    </div>
+
+    <!-- STORY PAGE -->
+    <div id="story" class="page" style="display: none;">
+        <section class="page-content story-content">
+
+            <img class="story-image" src="images/storypic.png" alt="Paul & Michelle">
+            <section class="red">
+                <div class="red-banner">
+            <p>P&M<br>29 Novembre 2025 | 06 Décembre 2025</p>
+            </div>
+            </section>
+           
+            </h3>
+
+            <p class="story-text">
+            Michelle et Paul se sont sûrement rencontré en 2019 sans le savoir dans la cour de la Pk FOKAM UNIVERSITY OF EXCELLENCE.
+            Michelle poursuivait ses études en commerce international et Paul le BAE Business Academy of Excellency.
+            Mais le destin va leur permettre de se retrouver à cause de leur amour pour la louange et l'adoration à travers le ministère LEAD ( Louons , adorons et élevons Dieu) un groupe interdominationelle . Deux ans plus tard,
+            Michelle était alors toujours à Yaoundé et Paul à Douala. Mais ce groupe organisait fréquemment des programmes à Yaoundé et Douala.
+            Après avoir longuement observé Michelle qui se distinguait par sa taille élancée et son assurance , Paul lui fait ses avances  autour d'avril 2024 mais essuie un refus.
+            Faisant toujours partie du même ministère ils continuait fréquemment à se voir notamment en raison du fait que Michelle résidait désormais à Douala.
+            Le 12 février 2025 Michelle finalement accepte de cheminer avec Paul après conviction de Dieu. Et depuis ce jour ils ont appris à se connaître, rencontrer leurs familles naturelles et spirituelles 
+            notamment celle de Navigateurs et décider de s'unir pour la vie.
+            </p>
+
+            <div class="photo-grid">
+                <img src="images/randompic1.png" alt="Photo 1">
+                <img src="images/randompic3.png" alt="Photo 2">
+                <img src="images/randompic4.png" alt="Photo 3">
+                <img src="images/randompic2.png" alt="Photo 4">
+            </div>
+            
+        </section>
+
+    </div>
+
+   <!-- DETAILS PAGE -->
+<div id="details" class="page details-wrapper" style="display: none;">
+    <section class="details-content">
+
+        <div class="details-hero-section">
+            <img src="images/detailhead.png" alt="Paul & Michelle">
+        </div>
+
+        <div class="map-section">
+            <img src="images/map.png" alt="Map">
+        </div>
+
+        
+        <div class="full-image-section">
+            <img src="images/detailleg.png" alt="Paul & Michelle">
+        </div>
+
+
+        <div class="event-cards-section">
+            <div class="event-card">
+                <p>Date:</p>
+                <h4>Samedi 29 novembre 2025</h4>
+                <p>Lieu:</p>
+                <h4>Dans la concession de Tocpa Tachuendom à Chengne Kampa (Baham-Chegne)</h4>
+                <p> Mariage traditionnel</p>
+                <h4>09h00</h4>
+                <p>Mairie</p>
+                <h4>12h00</h4> 
+            </div>
+
+            <div class="event-card">
+                <p>Date:</p>
+                <h4>Samedi 06 décembre 2025</h4>
+                <p>Bénédiction nuptiale:</p>
+                <h4>EEC (Église Évangélique du Cameroun) PK 12</h4>
+                <p> à 13h00</p>
+                <h4>suivi d'un cocktail dînatoire au centre Barnabas en face de Tradex Logpom</h4>
+                <p> à 17h00</p>
+            </div>
+        </div>
+
+        
+        <div class="full-image-section">
+            <img src="images/paul.png" alt="Paul">
+        </div>
+
+      
+        <div class="gift-section">
+            <div class="gift-card">
+                <p>La liste des cadeaux est désormais disponible à<br><strong>MAHIMA AKWA</strong></p>
+                <p>Contactez les numéros ci-dessous :</p>
+                <p><strong>+237 6 96 46 19 19</strong></p>
+            </div>
+            <div class="gift-image">
+                <img src="images/michelle.png" alt="Michelle">
+            </div>
+        </div>
+
+        <div class="gift-section reverse">
+            <div class="gift-image">
+                <img src="images/paul2.png" alt="Paul">
+            </div>
+            <div class="gift-card">
+                <p>Vous pouvez aussi faire un cadeau par paiement électronique</p>
+                <div class="payment-logos">
+                    <img src="images/momo.png" alt="MoMo">
+                    <img src="images/OM.png" alt="Orange Money">
+                <h4>Mtn : 652189299</h4>
+                <h4>Orange : 698016591</h4>
+                </div>
+            </div>
+        </div>
+
+        <div class="informations">
+            <p>Des hôtels seront disponibles pour les invités n'ayant pas où loger:</p>
+           <h4>Playce hotel<br> (centre ville Baham)<br>655 55 11 12</h4>
+           <br><br>
+              <h4>Hotel le marseillais<br> (Baham centre ville , bâtiment Migec)<br>655 55 11 13<br>653 81 27 08</h4>
+              <br>
+              <p>Pour plus d'informations veuillez contacter le:</p>
+              <br>
+              <h4>+237 6 96 46 19 19</h4>
+        </div>
+
+        
+        <div class="full-image-section reminder">
+            <img src="images/Registry section.png" alt="Reminder">
+            <div class="reminder-text">
+                <h3>RAPPEL</h3>
+                <p>Nous serions honorés de votre présence à notre célébration. Merci de bien vouloir confirmer votre participation avant le 22 Novembre 2025 en vous enregistrant via le lien ci-dessous. Votre réponse nous aidera à mieux vous accueillir.</p>
+                <button class="rsvp-btn" onclick="showPage('rsvp')">ENREGISTREZ-VOUS</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="date-footer">
+        <p>P&M<br>29 Novembre 2025 | 06 Décembre 2025</p>
+    </div>
+    </div>
+   
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('active');
+        }
+
+        function showPage(pageName) {
+            const pages = document.querySelectorAll('.page');
+            pages.forEach(page => {
+                page.style.display = 'none';
+            });
+            
+            document.getElementById(pageName).style.display = 'block';
+            
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.remove('active');
+            
+            window.scrollTo(0, 0);
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            alert('Merci pour votre réponse! Nous avons bien reçu votre confirmation.');
+            event.target.reset();
+        }
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+            });
+        });
+
+        window.addEventListener('scroll', function() {
+            const heroTitle = document.getElementById('heroTitle');
+            const scrollPosition = window.scrollY;
+            
+    
+            if (scrollPosition > 100) {
+                heroTitle.classList.add('scrolled');
+            } else {
+                heroTitle.classList.remove('scrolled');
+            }
+            
+    
+            const gridItems = document.querySelectorAll('.grid-item');
+            gridItems.forEach((item, index) => {
+                const itemPosition = item.getBoundingClientRect().top;
+                const screenPosition = window.innerHeight / 1.2;
+                
+                if (itemPosition < screenPosition) {
+                    setTimeout(() => {
+                        item.classList.add('fade-in');
+                    }, index * 150);
+                }
+            });
+        });
+
+        window.addEventListener('load', function() {
+            window.dispatchEvent(new Event('scroll'));
+        });
+    </script>
+</body>
+</html>
