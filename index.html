@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Paul & Michelle</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Préchargement des polices critiques -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Chargement optimisé des polices avec display=swap -->
+    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Aboreto&family=Cormorant+Garamond:wght@300;400;500;600;700&family=EB+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" sizes="32x32" href="images/P&M1.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/P&M1.png">
     <link rel="apple-touch-icon" sizes="180x180" href="images/P&M1.png">
@@ -59,25 +59,25 @@
         </section>
         <section class="grid-section">
             <div class="grid-item" onclick="showPage('story')">
-                <img src="images/histoire.png" alt="Notre Histoire">
+                <img src="images/histoire.png" alt="Notre Histoire" loading="lazy">
                 <div class="grid-overlay">
                     <h3 class="grid-title">Notre Histoire</h3>
                 </div>
             </div>
             <div class="grid-item" onclick="showPage('details')">
-                <img src="images/details.png" alt="Les Détails">
+                <img src="images/details.png" alt="Les Détails" loading="lazy">
                 <div class="grid-overlay">
                     <h3 class="grid-title">Les Détails</h3>
                 </div>
             </div>
             <div class="grid-item" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScW_grEImiK3C9rnjmx9svLsPychU-YbHLyYZHUlv1cZ_Zmrw/viewform?usp=header','_blank')">
-                <img src="images/RSVP.png" alt="RSVP">
+                <img src="images/RSVP.png" alt="RSVP" loading="lazy">
                 <div class="grid-overlay">
                     <h3 class="grid-title">RSVP</h3>
                 </div>
             </div>
             <div class="grid-item"onclick='window.open("https://docs.google.com/forms/d/e/1FAIpQLScW_grEImiK3C9rnjmx9svLsPychU-YbHLyYZHUlv1cZ_Zmrw/viewform?usp=header","_blank")'>
-                <img src="images/register.png" alt="Enregistrez-vous">
+                <img src="images/register.png" alt="Enregistrez-vous" loading="lazy">
                 <div class="grid-overlay">
                     <h3 class="grid-title">Enregistrez-vous</h3>
                 </div>
@@ -128,10 +128,10 @@
             </p>
 
             <div class="photo-grid">
-                <img src="images/randompic1.png" alt="Photo 1">
-                <img src="images/randompic3.png" alt="Photo 2">
-                <img src="images/randompic4.png" alt="Photo 3">
-                <img src="images/randompic2.png" alt="Photo 4">
+                <img src="images/randompic1.png" alt="Photo 1" loading="lazy">
+                <img src="images/randompic3.png" alt="Photo 2" loading="lazy">
+                <img src="images/randompic4.png" alt="Photo 3" loading="lazy">
+                <img src="images/randompic2.png" alt="Photo 4" loading="lazy">
             </div>
             
             <img class="mobile-story-image" src="images/123.png" alt="Paul & Michelle">
@@ -144,16 +144,16 @@
     <section class="details-content">
 
         <div class="details-hero-section">
-            <img src="images/detailhead.png" alt="Paul & Michelle">
+            <img src="images/detailhead.png" alt="Paul & Michelle" loading="lazy">
         </div>
 
         <div class="map-section">
-            <img src="images/map.png" alt="Map">
+            <img src="images/map.png" alt="Map" loading="lazy">
         </div>
 
         
         <div class="full-image-section">
-            <img src="images/detailleg.png" alt="Paul & Michelle">
+            <img src="images/detailleg.png" alt="Paul & Michelle" loading="lazy">
         </div>
 
 
@@ -182,7 +182,7 @@
 
         
         <div class="full-image-section">
-            <img src="images/paul.png" alt="Paul">
+            <img src="images/paul.png" alt="Paul" loading="lazy">
         </div>
 
       
@@ -193,7 +193,7 @@
                 <p><strong>+237 696 461 919</strong></p>
             </div>
             <div class="gift-image">
-                <img src="images/michelle.png" alt="Michelle">
+                <img src="images/michelle.png" alt="Michelle" loading="lazy">
             </div>
         </div>
 
@@ -214,8 +214,8 @@
 
         <div class="informations">
             <p>Des hôtels seront disponibles pour les invités n'ayant pas où loger:</p>
-              <h4>Playce hotel<br> (centre ville Baham)<br>655 55 11 12</h4>
-                  <h4>Hotel le marseillais<br> (Baham centre ville , bâtiment Migec)<br>655 55 11 13<br>653 81 27 08</h4>
+              <h4>Playce hotel<br> (centre ville Baham)<br>+237 655 551 112</h4>
+                  <h4>Hotel le marseillais<br> (Baham centre ville , bâtiment Migec)<br>+237 655 551 113<br>+237 653 812 708</h4>
                   <p>Pour plus d'informations veuillez contacter le:</p>
               
               <h4>+237 696 461 919</h4>
