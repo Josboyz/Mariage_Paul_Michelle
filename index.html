@@ -9,15 +9,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-    <style>
+<!-- <style>
         body {
             background-image: url('images/background.jpg');
             background-size: cover;
             background-attachment: fixed;
             background-position: center;
         }
-    </style>
+    </style> -->
 </head>
 <body>
     <nav>
@@ -31,7 +30,7 @@
             <li><a href="#home" onclick="showPage('home')">ACCUEIL</a></li>
             <li><a href="#story" onclick="showPage('story')">NOTRE HISTOIRE</a></li>
             <li><a href="#details" onclick="showPage('details')">DÉTAILS</a></li>
-            <li><a href="#rsvp" onclick="showPage('rsvp')">RSVP</a></li>
+            <li><a href="https://docs.google.com/forms/d/e/1FAIpQLScW_grEImiK3C9rnjmx9svLsPychU-YbHLyYZHUlv1cZ_Zmrw/viewform?usp=header" target="_blank" rel="noopener">RSVP</a></li>
         </ul>
     </nav>
 
@@ -53,7 +52,6 @@
                 </div>
             </div>
         </section>
-
         <section class="grid-section">
             <div class="grid-item" onclick="showPage('story')">
                 <img src="images/histoire.png" alt="Notre Histoire">
@@ -67,13 +65,13 @@
                     <h3 class="grid-title">Les Détails</h3>
                 </div>
             </div>
-            <div class="grid-item" onclick="showPage('rsvp')">
+            <div class="grid-item" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScW_grEImiK3C9rnjmx9svLsPychU-YbHLyYZHUlv1cZ_Zmrw/viewform?usp=header','_blank')">
                 <img src="images/RSVP.png" alt="RSVP">
                 <div class="grid-overlay">
                     <h3 class="grid-title">RSVP</h3>
                 </div>
             </div>
-            <div class="grid-item">
+            <div class="grid-item"onclick='window.open("https://docs.google.com/forms/d/e/1FAIpQLScW_grEImiK3C9rnjmx9svLsPychU-YbHLyYZHUlv1cZ_Zmrw/viewform?usp=header","_blank")'>
                 <img src="images/register.png" alt="Enregistrez-vous">
                 <div class="grid-overlay">
                     <h3 class="grid-title">Enregistrez-vous</h3>
@@ -89,8 +87,7 @@
                 organiser cette journée inoubliable avec vous. Votre présence 
                 sera notre plus beau cadeau.
             </p>
-            <br><br>
-            <button class="rsvp-btn" onclick="showPage('rsvp')">RÉPONDEZ ICI</button>
+            <button class="rsvp-btn" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScW_grEImiK3C9rnjmx9svLsPychU-YbHLyYZHUlv1cZ_Zmrw/viewform?usp=header','_blank')">RÉPONDEZ ICI</button>
         </section>
 
         <footer>
@@ -109,7 +106,7 @@
             <p>P&M<br><p>29 Novembre 2025 | 06 Décembre 2025</p></p>
             </div>
             </section>
-            <br><br>
+            
            <h3 class="story-title">
             NOTRE HISTOIRE
             </h3>
@@ -212,12 +209,10 @@
 
         <div class="informations">
             <p>Des hôtels seront disponibles pour les invités n'ayant pas où loger:</p>
-           <h4>Playce hotel<br> (centre ville Baham)<br>655 55 11 12</h4>
-           <br><br>
-              <h4>Hotel le marseillais<br> (Baham centre ville , bâtiment Migec)<br>655 55 11 13<br>653 81 27 08</h4>
-              <br>
-              <p>Pour plus d'informations veuillez contacter le:</p>
-              <br>
+              <h4>Playce hotel<br> (centre ville Baham)<br>655 55 11 12</h4>
+                  <h4>Hotel le marseillais<br> (Baham centre ville , bâtiment Migec)<br>655 55 11 13<br>653 81 27 08</h4>
+                  <p>Pour plus d'informations veuillez contacter le:</p>
+              
               <h4>+237 6 96 46 19 19</h4>
         </div>
 
@@ -227,7 +222,7 @@
             <div class="reminder-text">
                 <h3>RAPPEL</h3>
                 <p>Nous serions honorés de votre présence à notre célébration. Merci de bien vouloir confirmer votre participation avant le 22 Novembre 2025 en vous enregistrant via le lien ci-dessous. Votre réponse nous aidera à mieux vous accueillir.</p>
-                <button class="rsvp-btn" onclick="showPage('rsvp')">ENREGISTREZ-VOUS</button>
+                <button class="rsvp-btn" onclick="window.open('https://docs.google.com/forms/d/e/1FAIpQLScW_grEImiK3C9rnjmx9svLsPychU-YbHLyYZHUlv1cZ_Zmrw/viewform?usp=header','_blank')">ENREGISTREZ-VOUS</button>
             </div>
         </div>
     </section>
@@ -346,8 +341,6 @@
             nav.style.backgroundColor = '#44423E';
         } else if (pageId === 'story') {
             nav.style.backgroundColor = '#44423E';
-        } else if (pageId === 'rsvp') {
-            nav.style.backgroundColor = '#444';
         }
 
         
