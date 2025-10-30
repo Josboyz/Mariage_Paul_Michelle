@@ -785,7 +785,7 @@
                 object-fit: cover;
             }
             .payment-logos {
-                width: 250px;
+                width: auto;
                 align-items: center;
             }
 
