@@ -787,6 +787,8 @@
             }
             .payment-logos {
                 width: 300px;
+                justify-content: center;
+                margin-left: 0px;
                 align-items: center;
             }
             .gift-card.numbers {
