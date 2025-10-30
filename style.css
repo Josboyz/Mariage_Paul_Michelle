@@ -331,8 +331,7 @@
         }   
        .story-image { 
             width: 100%; 
-            max-width: 500px; 
-            height: 500px; 
+            max-width: 500px;
             background-image: "url('images/background.jpg')";
             margin: 40px auto; 
             display: block; 
