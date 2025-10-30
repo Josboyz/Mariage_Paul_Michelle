@@ -8,8 +8,23 @@
             font-family: 'Georgia', serif;
             color: #333;
         }
+.fade-in {
+  animation: fadeIn 0.8s ease forwards;
+  opacity: 0;
+}
 
-        /* Navigation */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
         nav {
             background-color: #2d5f4f;
             padding: 15px 30px;
@@ -20,6 +35,7 @@
             top: 0;
             z-index: 1000;
         }
+        
 
         .logo {
             color: white;
@@ -34,6 +50,7 @@
             height: 20px;
         }
         .logo h2 {
+            font-family: 'Cormorant Garamond', serif;
             font-size: 14px;
             font-weight: normal;
             margin-top: 5px;
@@ -59,6 +76,11 @@
         .nav-links a:hover {
             opacity: 0.7;
         }
+        .nav-links a.active {
+            font-weight: bold;
+            border-bottom: 2px solid white;
+            opacity: 1;
+        }
 
         .menu-btn {
             display: none;
@@ -69,9 +91,7 @@
             cursor: pointer;
         }
 
-        /* Hero Section */
         .hero {
-            background-color: #fff;
             text-align: center;
             padding-bottom: 40px;
             position: sticky;
@@ -80,7 +100,7 @@
         }
 
         .hero-title-container {
-            background-color: white;
+
             padding: 40px 20px;
             position: sticky;
             z-index: 10;
@@ -144,7 +164,7 @@
             margin-top: 15px;
         }
 
-        /* Grid Section */
+
         .grid-section {
         display: grid;
         grid-template-columns: repeat(2, minmax(250px, 1fr));
@@ -209,26 +229,35 @@
         }
 
 
-        /* RSVP Section */
+    
         .rsvp-section {
-            background: linear-gradient(rgba(45, 95, 79, 0.85), rgba(45, 95, 79, 0.85)), url('') center/cover;
+            background: url('images/Registry\ section\ 2.png') center/cover;
             color: white;
             text-align: center;
             padding: 80px 20px;
+            height: 400px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
 
         .rsvp-section h2 {
             font-size: 36px;
+            text-align: center;
             margin-bottom: 30px;
             font-weight: 300;
             letter-spacing: 3px;
+            font-family: 'EB Garamond', serif;
         }
 
         .rsvp-text {
             max-width: 600px;
-            margin: 0 auto 40px;
+            margin: 7px auto 40x;
             line-height: 1.8;
-            font-size: 16px;
+            font-size: 20px;
+            font-family: 'EB Garamond', serif;
+            margin-top: 10px;
         }
 
         .rsvp-btn {
@@ -236,6 +265,7 @@
             border: 1px solid white;
             border-bottom: 0 0 10px rgba(255, 255, 255, 0.3);
             color: white;
+            margin-top: 30px;
             border-radius: 25px;
             padding: 15px 50px;
             font-size: 16px;
@@ -266,11 +296,12 @@
         }
 
         footer p {
+            font-family: 'Cormorant Garamond', serif;
             font-size: 14px;
             opacity: 0.9;
         }
 
-       /* Page Content */ 
+       
        .page-content { 
             max-width: 1200px; 
             margin: 0 auto; 
@@ -295,13 +326,22 @@
             width: 100%; 
             max-width: 500px; 
             height: 500px; 
-            background-color: #ffffff; 
+            background-image: "url('images/background.jpg')";
             margin: 40px auto; 
             display: block; 
-        } 
+        } .story-title { 
+            font-family: 'Aboreto', serif;
+            font-size: 36px; 
+            margin-bottom: 20px; 
+            text-align: center; 
+            font-weight: 300; 
+            text-transform: uppercase; 
+            letter-spacing: 2px; 
+        }
+
        .story-text { 
-            font-family: 'popins', sans-serifs;
-            font-size: 18px; 
+            font-family: EB Garamond, serif;
+            font-size: 20px; 
             line-height: 1.8; 
             margin-bottom: 30px; 
             text-align: center; 
@@ -323,13 +363,18 @@
             background-color: #d94e33;
             color: white;
             text-align: center;
-            padding: 20px 0;
+            padding: 60px 0;
             width: 100vw;              
             position: relative;
             left: 50%;
             right: 50%;
             margin-left: -50vw;        
             margin-right: -50vw;
+        }
+        .red-banner p {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 23px;
+            letter-spacing: 1px;
         }
 
        .photo-grid { 
@@ -344,7 +389,14 @@
             width: 100%; 
             height: 450px; 
             object-fit: cover; 
-            background-color: #ffffff; 
+             
+        }
+        .mobile-story-image {
+            display: none;
+            width: 100%; 
+            height: auto; 
+            object-fit: cover;
+            margin: 30px 0;
         }
 
          .dress-code {
@@ -384,9 +436,22 @@
                 object-fit: cover;
         }
 
-            .map-section {
-                background-color: white;
-        }
+            .map-section { 
+                max-width: 800px; 
+                margin: 60px auto; 
+                padding: 0 20px;
+
+            } .map-container { 
+                width: 100%; 
+                height: 450px; 
+                background-color: #f0f0f0; 
+                position: relative; } 
+
+            .map-container img { 
+                width: 100%; 
+                height: 500px; 
+                object-fit: cover; 
+            }
 
             .event-cards-section {
                 display: flex;
@@ -394,7 +459,6 @@
                 justify-content: center;
                 gap: 30px;
                 padding: 80px 20px;
-                background-color: #f0eeee;
         }
 
             .event-card {
@@ -433,12 +497,10 @@
                 align-items: center;
                 gap: 40px;
                 padding: 80px 20px;
-                background-color: #f0eeee;
                 color: rgb(14, 12, 12);
         }
 
             .gift-section.reverse {
-                background-color: #f0eeee;
                 color: #000;
         }
 
@@ -484,23 +546,32 @@
         }
 
             .informations{
-                background-color: #ffffff;
                 padding: 60px 20px;
                 text-align: center;
-                font-family: "Georgia", serif;
                 line-height: 1.8;
                 color: #222;
         }
-
-            .full-image-section.reminder {
+        .informations h4 {
+                font-family: 'EB Garamond', serif;
+                font-size: 16px;
+                margin-bottom: 20px;
+                letter-spacing: 1px;
+            }
+        .informations p {
+                font-family: 'EB Garamond', serif;
+                font-size: 16px;
+            }
+        .full-image-section.reminder {
                 height: 650px;
                 position: relative;
                 text-align: center;
                 color: white;
         }
 
-            .reminder-text {
+        .reminder-text {
                 position: absolute;
+                font-size: 16px;
+                font-family: 'EB Garamond', serif;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
@@ -514,13 +585,13 @@
                 margin-bottom: 20px;
         }
 
-            .reminder-text p {
+         .reminder-text p {
                 line-height: 1.8;
                 font-size: 19px;
                 margin-bottom: 30px;
         }
 
-            .rsvp-btn {
+        .rsvp-btn {
                 background-color: #145944;
                 color: white;
                 border: none;
@@ -530,11 +601,11 @@
                 cursor: pointer;
         }
 
-            .rsvp-btn:hover {
+        .rsvp-btn:hover {
                 background-color: #0f3e30;
         }
 
-            .date-footer {
+        .date-footer {
                 background-color: #d94e33;
                 color: white;
                 text-align: center;
@@ -542,10 +613,11 @@
                 font-size: 18px;
                 letter-spacing: 1px;
         }
+
         /* Mobile Styles */
         @media (max-width: 768px) {
             nav {
-                background-color: #d3d3d3;
+                background-color: #d3d3d3 !important;
             }
 
             .menu-btn {
@@ -591,6 +663,9 @@
             .hero h1 {
                 font-size: 48px;
             }
+            .hero-text {
+                font-size: 18px;
+            }
 
             .hero-image {
                 height: 400px;
@@ -619,8 +694,12 @@
             }
              .event-cards,
             .photo-grid {
-                grid-template-columns: 1fr;
+                display: none;
             }
+            .mobile-story-image{
+                display: block; 
+            }
+
 
             .couple-row,
             .couple-row.reverse {
@@ -637,8 +716,15 @@
                 text-align: center;
             }
 
+
             .gift-section.reverse {
                 flex-direction: column-reverse;
+            }
+            .full-image-section.reminder {
+               width: 100%;
+                height: auto;
+                display: block;
+                object-fit: cover;
             }
 
             .event-cards-section {
