@@ -771,6 +771,7 @@
             .payment-item {
                 justify-content: center;
                 width: 300px;
+                margin-left: 0px;
                 max-width: 450px;
             }
 
