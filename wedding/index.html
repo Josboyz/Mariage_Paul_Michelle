@@ -6,6 +6,10 @@
     <title>Paul & Michelle</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
     <style>
         body {
             background-image: url('images/background.jpg');
@@ -85,6 +89,7 @@
                 organiser cette journée inoubliable avec vous. Votre présence 
                 sera notre plus beau cadeau.
             </p>
+            <br><br>
             <button class="rsvp-btn" onclick="showPage('rsvp')">RÉPONDEZ ICI</button>
         </section>
 
@@ -101,10 +106,12 @@
             <img class="story-image" src="images/storypic.png" alt="Paul & Michelle">
             <section class="red">
                 <div class="red-banner">
-            <p>P&M<br>29 Novembre 2025 | 06 Décembre 2025</p>
+            <p>P&M<br><p>29 Novembre 2025 | 06 Décembre 2025</p></p>
             </div>
             </section>
-           
+            <br><br>
+           <h3 class="story-title">
+            NOTRE HISTOIRE
             </h3>
 
             <p class="story-text">
@@ -125,6 +132,7 @@
                 <img src="images/randompic2.png" alt="Photo 4">
             </div>
             
+            <img class="mobile-story-image" src="images/123.png" alt="Paul & Michelle">
         </section>
 
     </div>
@@ -289,6 +297,63 @@
         window.addEventListener('load', function() {
             window.dispatchEvent(new Event('scroll'));
         });
+        function showPage(pageName) {
+        const pages = document.querySelectorAll('.page');
+        pages.forEach(page => {
+            page.style.display = 'none';
+        });
+
+        document.getElementById(pageName).style.display = 'block';
+
+        const navLinks = document.querySelectorAll('.nav-links a');
+        navLinks.forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('onclick').includes(pageName)) {
+            link.classList.add('active');
+            }
+        });
+
+
+        document.getElementById('navLinks').classList.remove('active');
+
+
+        window.scrollTo(0, 0);
+            }
+        function showPage(pageId) {
+
+        document.querySelectorAll('.page').forEach(page => {
+            page.style.display = 'none';
+            page.classList.remove('fade-in');
+        });
+
+        const currentPage = document.getElementById(pageId);
+        currentPage.style.display = 'block';
+        currentPage.classList.add('fade-in');
+
+  
+        document.querySelectorAll('.nav-links a').forEach(link => {
+            link.classList.remove('active');
+            if (link.getAttribute('href').includes(pageId)) {
+            link.classList.add('active');
+            }
+        });
+
+        
+        const nav = document.querySelector('nav');
+        if (pageId === 'home') {
+            nav.style.backgroundColor = '#2d5f4f';
+        } else if (pageId === 'details') {
+            nav.style.backgroundColor = '#44423E';
+        } else if (pageId === 'story') {
+            nav.style.backgroundColor = '#44423E';
+        } else if (pageId === 'rsvp') {
+            nav.style.backgroundColor = '#444';
+        }
+
+        
+        window.scrollTo(0, 0);
+        }
+
     </script>
 </body>
-</html>
+</html> 
