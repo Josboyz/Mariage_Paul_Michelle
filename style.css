@@ -512,22 +512,19 @@
         }
 
             .gift-card {
-                flex: row;
+                flex: column;
                 border: #cac9c9 solid 1px;
                 border-radius: 16px;
                 background-color: #CA401C;
                 padding: 30px;
-                height: 250px;
-                max-width: 400px;
+                text-align: center;
+                height: 200px;
+                max-width: 500px;
                 font-family: 'EB Garamond', serif;
                 line-height: 1.8;
         }
-            .gift-card p {
-                color: #fff;
-        }
-            .gift-card a {
-                text-decoration: none;
-                color: #fff;
+            .gift-card p{
+                color: white;
             }
 
             .gift-image {
@@ -545,13 +542,13 @@
                 display:flex;
                 flex:content;
                 align-items: center;
-                gap: 25px;
-                margin-top: 30px;
+                gap: 20px;
+                margin-top: 25px;
         }
 
 
             .payment-logos img {
-                width: 60px;
+                width: 55px;
                 height: auto;
         }
             .payment-numbers {
@@ -559,7 +556,25 @@
                 color: #fcf4f4;
                 flex-direction: row;
         }
-
+            .payment-item {
+                display:contents;
+                align-items: center;
+                gap: 15px;
+                margin-top: 10px;
+                color: #ffffff;
+                border-radius: 1px;
+                width: auto;
+                padding: 1px 20px;
+            }
+            .payment-item img {
+                width: 55px;
+                height: auto;
+            }
+            .payment-item .numbers {
+                width: 55px;
+                font-size: 14px;
+                letter-spacing: 1px;
+            }
             .informations{
                 padding: 40px 20px;
                 text-align: center;
@@ -749,6 +764,15 @@
                 flex-direction: column;
                 text-align: center;
             }
+            .gift-card {
+                max-width: 100%;
+                ;
+            }   
+            .payment-item {
+                justify-content: center;
+                width: 100%;
+                max-width: 280px;
+            }
 
 
             .gift-section.reverse {
@@ -759,6 +783,9 @@
                 height: auto;
                 display: block;
                 object-fit: cover;
+            }
+            .payment-logos {
+                align-items: center;
             }
 
             .event-cards-section {
