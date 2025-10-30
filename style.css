@@ -770,8 +770,8 @@
             }   
             .payment-item {
                 justify-content: center;
-                width: 100%;
-                max-width: 280px;
+                width: 300px;
+                max-width: 450px;
             }
 
 
@@ -785,9 +785,12 @@
                 object-fit: cover;
             }
             .payment-logos {
-                width: auto;
+                width: 300px;
                 align-items: center;
             }
+            .gift-card.numbers {
+                font-size: 7px;
+            }   
 
             .event-cards-section {
                 flex-direction: column;
