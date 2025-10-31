@@ -509,10 +509,6 @@
   padding: 40px 20px;
 }
 
-.gift-section.reverse {
-  flex-direction: row-reverse;
-}
-
 .gift-image img {
   width: 300px;
   height: auto;
@@ -577,13 +573,37 @@
                 font-size: 16px;
             }
         .full-image-section.reminder {
-                height: 650px;
+                height: 100%;
                 position: relative;
                 text-align: center;
                 color: white;
         }
 
         .reminder-text {
+                position: absolute;
+                font-size: 45px;
+                font-family: 'EB Garamond', serif;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 80%;
+                max-width: 600px;
+        }
+
+            .reminder-text h3 {
+                font-size: 50px;
+                letter-spacing: 2px;
+                margin-bottom: 10px;
+        }
+
+         .reminder-text p {
+                line-height: 1.8;
+                font-size: 20px;
+                margin-bottom: 5px;
+        }
+        
+        @media screen and (max-width: 768px){
+            .reminder-text {
                 position: absolute;
                 font-size: 12px;
                 font-family: 'EB Garamond', serif;
@@ -604,6 +624,8 @@
                 line-height: 1.8;
                 font-size: 16px;
                 margin-bottom: 5px;
+        }
+
         }
 
         .rsvp-btn {
@@ -745,37 +767,37 @@
                 margin-left: auto;
                 margin-right: auto;
             }
+        @media screen and (max-width: 768px) {
             .gift-section {
-                flex-direction: column;
-                text-align: center;
+                    flex-direction: column;
+                    align-items: center;
+                    text-align: center;
             }
+
+            .gift-image img {
+                    max-width: 250px;
+                    margin-bottom: 20px;
+            }
+
             .gift-card {
-                max-width: 300%;
-                ;
-            }   
-            .payment-item {
-                justify-content: center;
-                width: 100px;
-                margin-left: 0px;
-                max-width: 500px;
+                    max-width: 90%;
             }
 
-
-            .gift-section.reverse {
-                flex-direction: column-reverse;
-            }
-            .full-image-section.reminder {
-               width: 100%;
-                height: auto;
-                display: block;
-                object-fit: cover;
-            }
             .payment-logos {
-                width: 300px;
-                justify-content: center;
-                margin-left: 0px;
-                align-items: center;
+                    flex-direction: row;
+                    justify-content: center;
+                    gap: 15px;
             }
+
+            .payment-item img {
+                    width: 60px;
+            }
+
+            .number {
+                    font-size: 14px;
+            }
+        }
+            
             .gift-card.numbers {
                 font-size: 7px;
             }   
